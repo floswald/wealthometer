@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Wealthometer: USA</title>
+	<meta name="description" content="Wealthometer: USA">
+	<meta property="og:type" content="non_profit">
+	<meta property="og:title" content="non_profit">
+	<meta property="og:url" content="http://wealthometer.org/">
+	<meta property="og:image" content="http://wealthometer.org/img/fb-logo.png">
+	<meta property="og:description" content="Enter your data and find out your position in the US distribution of wealth. Simulate how wealth taxes would affect you and others!">
+
+	<link rel="stylesheet" href="../css/normalize.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+   
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script src="js/simple-slider.js"></script>
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+		<script src="js/excanvas.compiled.js"></script>
+	<![endif]-->
+		
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-45979400-1', 'wealthometer.org');
+	  ga('send', 'pageview');
+
+  </script>
+
+</head>
+<body class="rechner2">
+<div id="wrapper">
+	<a name="top" id="top"></a>
+			
+	<div class="row" id="header">
+		<div class="row-contentholder">
+			<h1 class="title"><a href="index.html" title="HOME">WEALTHOMETER: USA</a></h1>
+		<nav>
+			<ul>
+				<li><a href="motivation.html" title="MOTIVATION">MOTIVATION</a></li>
+				<li><a href="rechner1.html" title="CALCULATOR" class="current">CALCULATOR</a></li>
+				<li><a href="daten.html" title="ABOUT: DATA">BACKGROUND: DATA</a></li>
+				<li><a href="berechnung.html" title="ABOUT: CALCULATIONS">BACKGROUND: CALCULATIONS</a></li>
+				<li><a href="about.html" title="ABOUT US">ABOUT US</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</nav>
+		</div>
+	</div>
+			
+	<div class="row" id="content">
+		<div class="row-contentholder centered">
+			<h2 style="margin-bottom:20px;">2. Your wealth</h2>
+			<h3>How much does your household own?</h3>
+			<p>None of the data you enter will be stored.</p>
+			<form>
+				<fieldset>
+					<!--<legend>VERMÖGENSWERTE</legend>-->
+					<div class="threecol">
+						<label for="sachvermoegen"><h4>REAL ASSETS</h4></label>
+						<input type="text" name="Sachvermoegen" id="sachvermoegen" placeholder="$" />
+						<ul class="f-ul-details">
+							<li>Residential real estate</li>
+							<li>Commercial real estate, including farmland, woodland, etc.</li>
+							<li>Vehicles</li>
+							<li>Direct stakes in companies</li>
+							<li>Other objects, jewellery, etc.</li>
+						</ul>
+					</div>
+					<div class="threecol">
+						<label for="finanzvermoegen"><h4>FINANCIAL ASSETS</h4></label>
+						<input type="text" name="Finanzvermoegen" id="finanzvermoegen" placeholder="$" />
+						<ul class="f-ul-details">
+							<li>Checking accounts</li>
+							<li>Savings accounts</li>
+							<li>Pension funds, life insurance funds, 401K funds, etc.</li>
+							<li>Stocks, bonds and other financial investments</li>
+							<li>Money owed to your household by others</li>
+						</ul>
+					</div>
+					<div class="threecol">
+						<label for="schulden"><h4>DEBT</h4></label>
+						<input type="text" name="Schulden" id="schulden" placeholder="$" />
+						<ul class="f-ul-details">
+							<li>Secured debts (mortgages, auto loans, etc.)</li>
+							<li>Unsecured debts, i.e., credit card debts, arrears, unplanned overdrafts, etc. </li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+					<label for="mitglieder"><h4 style="margin-top:20px; margin-bottom:15px;">NUMBER OF HOUSEHOLD MEMBERS</h4></label>
+					<input type="text" name="Mitglieder" id="mitglieder" placeholder="1" /> 
+				</fieldset>
+			</form>
+			<p>Your wealth is calculated as the sum of real and financial assets, net of debt, and divided by the number of household members. </p>
+			<a class="button" id="button-calculate" href="#ergebnis1" title="CALCULATE RESULT">CALCULATE</a>
+			<hr>
+			<a name="ergebnis1"></a>
+			<h2 style="margin-bottom:25px">3. The comparison</h2>
+			<div class="twocol"><h3>Your estimate:</h3><span class="results-number" id="f-estimate">-</span></div> 
+			<div class="twocol"><h3>Your actual position:</h3><span class="results-number" id="f-actual">-</span></div>
+			<div class="clearfix"></div>
+			<canvas id="results-display" width="1000" height="600"></canvas>
+			<div class="showlater">
+				<h4>EXPLANATION</h4>
+				<p>Your wealth is $<span class="val-actual">204.000</span>, which is more than <span class="pos-actual">86</span>% of the US population own (<strong>blue</strong> bar).
+					<br>This means that <span class="pos-actual">86</span>% are less wealthy than you.</p>
+					<p>At <span class="pos-estimate">86</span>% a <strong>green</strong> bar at $<span class="val-estimate">204.000</span> marks your initial estimate.</p>
+			</div>
+			
+			<hr>
+			<a class="button" id="button-weiter" style="margin-top:10px;" href="rechner3.html" title="NEXT STEP">CONTINUE</a>
+			CALCULATOR: <a href="rechner1.html" title="SCHRITT 1">1</a> | <span class="current">2</span> | <a href="rechner3.html" title="STEP 3">3</a>
+		</div>
+	</div>
+	
+	<div class="row txt-small-bright" id="footer">
+		<div class="row-contentholder">
+			&copy; 2013 wealthometer.org
+		</div>
+	</div>
+</div><!--WRAPPER-->
+</body>
+</html>
