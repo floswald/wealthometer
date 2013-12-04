@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Wealthometer: USA</title>
+	<meta name="description" content"Wealthometer: USA">
+	<meta property="og:type" content="non_profit">
+	<meta property="og:title" content="non_profit">
+	<meta property="og:url" content="http://wealthometer.org/">
+	<meta property="og:image" content="http://wealthometer.org/img/fb-logo.png">
+	<meta property="og:description" content="Enter your data and find out your position in the US distribution of wealth. Simulate how wealth taxes would affect you and others!">
+
+	<link rel="stylesheet" href="../css/normalize.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+        
+      		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+			
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-45979400-1', 'wealthometer.org');
+		  ga('send', 'pageview');
+
+	  </script>
+
+    </head>
+    <body>
+
+    <div id="wrapper">
+    <a name="top" id="top"></a>
+            
+      <div class="row" id="header">
+                <div class="row-contentholder">
+                
+			<h1 class="title"><a href="index.html" title="HOME">WEALTHOMETER: USA</a></h1>
+		<nav>
+			<ul>
+				<li><a href="motivation.html" title="MOTIVATION">MOTIVATION</a></li>
+				<li><a href="calculator1.html" title="CALCULATOR">CALCULATOR</a></li>
+				<li><a href="data.html" title="BACKGROUND: DATA">BACKGROUND: DATA</a></li>
+				<li><a href="calculation.html" title="BACKGROUND: CALCULATIONS" class="current">BACKGROUND: CALCULATIONS</a></li>
+				<li><a href="about.html" title="ABOUT US">ABOUT US</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </nav>
+                </div>
+            </div>
+
+            
+      <div class="row" id="content">
+            	<div class="row-contentholder slim justified">
+                
+           		  <h2 class="centered" style="margin-bottom:30px;">How is the effect of a tax reform calculated?</h2>
+
+				<p>The tax calculator on this webpage allows you to predict:                 
+                <ol>
+                  <li>how much a reform of (wealth) taxes would cost or benefit you, depending on the tax exempt amount and the tax rate,</li>
+                  <li>how much more or less other people with different levels of wealth
+     would have to pay, </li>
+                  <li>and how much government revenues it would generate.</li>
+                </ol>
+                <p>To explain what this calculator does, it is useful to briefly talk about how
+economists think about the impact of tax reforms, and about how tax rates
+should "optimally" be set. When the government changes some tax rate, a
+number of things can happen at the same time: </p>
+                <ol>
+                  <li>Just  mechanically,  everybody  has  to  pay  more  or  less  taxes on the wealth they had before the tax reform,
+     and  correspondingly  the  government  has  more  or  less  revenues.
+     ("Mechanical effects") </li>
+                  <li>Individuals might react to the changing taxes, for instance by saving
+     more or less money.  "Saving" means that individuals don't spend their money on consumption, but instead invest it in savings accounts, real estate, stocks, funds, etc.
+They might also react by changing how much they cheat on their taxes. This might affect (a) government revenues, (b) those who change their behavior, and (c) other individuals. ("Behavioral effects")</li>
+                  <li>Changes in behavior might lead to a change in market prices or interest
+     rates, which can make different individuals better or worse off. ("Price
+     effects") </li>
+                </ol>
+                
+                <p>How do these effects enter our calculations?</p>
+                
+                <strong>1. Mechanical Effects</strong>
+                
+                
+                <p>This is the simplest, but also most important part of our calculations.
+     To  calculate  mechanical  effects,  we  use  the  information  about
+     the  distribution  of  wealth  that  is provided by the
+     <a href="http://www.federalreserve.gov/econresdata/scf/scfindex.htm"><em>Survey of Consumer Finances (SCF)</em></a>.</p>
+               
+               <strong>2. Behavioral effects:</strong>
+                    
+                  <p style="text-indent:50px;"><strong>a) ... On government revenues:</strong></p>
+                    
+                <p>When individuals save less or start
+          to evade taxes more frequently after an increase in wealth taxes,
+          this means that the government might gain less in tax revenues
+          than  we  would  think  based  on  mechanical  calculations  (since
+          there is less declared wealth to be taxed). How large this behavioral
+          effect on government revenues is, is a difficult empirical question.
+          What we know is that most of the effects are taking place because
+          of increased evasion or avoidance, rather than through decreased
+          savings. Most empirical studies have found little to no effect of
+          returns  (net interest rates, rental income from real estate, capital gains from stocks, etc.) on how much people actually save.<a href="#_ftn1" name="_ftnref1" title="Footnote 1"><sup>1</sup></a> <br>
+                  <br>
+                  We base our calculations on the assumption that, because of tax
+          evasion, increases in government revenues are about 15% less than
+          suggested by mechanical calculations. This number is probably
+          overestimating the behavioral effect of tax increases. If taxes are
+          well enforced then the behavioral effect might well be smaller.</p>
+               
+       
+             <p style="text-indent:50px;"><strong>b)... On those changing their behavior:</strong></p>
+               
+                <p>When individuals save
+          less  or  start  to  evade  taxes  more  frequently  after  an  increase
+          in wealth taxes, this means that they might actually be better
+          off than suggested by the mechanical calculation of how much
+          they  have  to  pay.  After  all,  they  could  simply  have  done  the
+          same as they did before the tax reform (that is, they could have saved the same and not changed how much they cheat on taxes), but chose not to. Taking this line of reasoning further, it can be shown that in fact behavioral
+          changes can be ignored when calculating the effect of the reform
+          on individuals.
+</p>
+                
+                <p style="text-indent:50px;"><strong>c)... On other individuals:</strong></p>
+                
+                
+                <p>In a competitive market with property
+          rights,  such  as  the  capital  markets  of the  US,  the
+          owners of capital (savings, real estate, stocks, etc.) generally gain all the returns to their
+          capital. Contrary to claims often made in public debate, no one
+          else profits from their continuing participation. That means that nobody else is directly affected
+          by any of their behavioral changes.</p>
+                
+                
+                <strong>3. Effects on prices and interest rates:</strong>
+                
+                <p>In principle, a change in wealth taxes might shift
+     savings to such an extent that the available capital in the economy
+     and thereby the real interest rate do change. In practice, these
+     effects are very small. Two reasons for this are that (i) capital is
+     globally mobile and changes in savings in one country will have a
+     negligible effect on the global capital stock, and (ii) the behavioral
+     effects of interest rates on savings (as opposed to tax evasion) are
+     empirically very small. Following standard practice in the academic
+     literature, our calculations therefore assume that there are no price
+     effects. </p>
+                <p>Based on these different effects, we know how much any given person or
+household is affected by the tax reform. To get an effect "for the entire economy,"
+we have to somehow sum these effects up. But of course an additional dollar for a
+poor person is not the same as an additional dollar for a rich person. It makes no
+sense to say that giving $100 to a person earning $10,000 per year is the
+same as giving $100 to a person making $100,000 Euro per year.
+We have to make a trade-off between different people, and choose how
+much weight we assign to poor versus rich people, when summing up.
+These weights are a matter of distributive justice that economists do not
+have more to say about than anyone else; at the end of the day this is a
+matter of "picking a side" &#8211; who do we think should rather get additional
+income?
+<br>
+                  Building on such considerations, economists then discuss about the "effect on
+social welfare" of a change in tax rates. This effect on social welfare is given
+by the sum of the weighted effects on all the individuals in the economy.
+Economists say a choice of tax rates is "optimal," if no change is possible that
+would increase "social welfare."<br>
+                  On this website, we show you how much different people would gain or lose
+from tax changes that you propose. It is up to you to decide how you evaluate
+these gains and losses.</p>
+                <div>
+                
+                
+                <hr>
+                
+                
+                  <div id="ftn1">
+                    <a href="#_ftnref1" name="_ftn1" title=""><sup>1</sup> </a> For further information on the empirical literature concerned with this question see Bernheim, B.  D. (2002): Taxation and saving, in: <em>Handbook  of public economics</em>, 3 and Attanasio, O. P./Wakefield, M. (2010): The  effects on consumption and saving of taxing asset returns, in: <em>Dimensions of tax design: the Mirrlees  review</em>, in particular chapter 7.3.3. </div>
+                
+                <hr>
+                
+                <p><strong>Further Literature:</strong></p>
+                  <p>Saez, E. (2001). Using elasticities to derive  optimal income tax rates. <em>Review of  Economic Studies</em>, 68(1): 205–229</p>
+                  <p>Chetty, R. (2009). Sufficient statistics for  welfare analysis: A bridge between structural and reduced-form methods. <em>Annual Review of Economics</em>, 1(1): 451–488.<br></p>
+                  <p>Mirrlees, J.  et al. (2010, Hg.). <em>Dimensions of tax  design: the Mirrlees review</em>. Oxford University Press.  </p>                              
+                                                           	</div>
+            </div><!--content-->
+            
+      <div class="row txt-small-bright" id="footer">
+            	<div class="row-contentholder">
+            		&copy; 2013 wealthometer.org
+                </div>
+            </div>
+	    
+        
+        
+        </div><!--WRAPPER-->
+        
+        
+        <p>
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+          <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        </p>
+        <p>
+          <script src="js/main.js"></script>
+          <script type="text/javascript" src="js/smoothscroll.js"></script>
+        </p>
+    </body>
+</html>
