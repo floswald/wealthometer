@@ -16,5 +16,5 @@ code and country-specific data for the tax calculator.
 
 # copyright
 
-* the core of this code was written for [http://www.binichreich.at](www.binichreich.at)
+* the core of this code was written for [http://www.binichreich.at](http://www.binichreich.at)
 * Because of this, code in this repo is NOT open source.
