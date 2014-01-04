@@ -12,7 +12,7 @@
 	<meta property="og:title" content="non_profit">
 	<meta property="og:url" content="http://wealthometer.org/">
 	<meta property="og:image" content="http://wealthometer.org/img/fb-logo.png">
-	<meta property="og:description" content="Enter your data and find out your position in the US distribution of wealth. Simulate how wealth taxes would affect you and others!">
+	<meta property="og:description" content="What is your position in the distribution of wealth? How would a change in wealth taxes affect you?">
 	
 	<link rel="stylesheet" href="../css/normalize.min.css">
 	<link rel="stylesheet" href="../css/main.css">
@@ -75,7 +75,7 @@
 				<input class="slider2" type="text" data-slider="true" data-slider-range="0,1000000" data-slider-step="1000">
 				<div class="slider-number numleft">$0</div>
 				<div class="slider-number numright">$1,000,000</div>
-				<div class="slider-value">0</div>
+				<div class="slider-value">$0</div>
 				<div class="clearfix"></div>
 				<h4>Tax exempt amount</h4>   
 			</div><!--slider-wrapper-->
@@ -87,14 +87,16 @@
 				<div class="slider-number numleft">0.1%</div>
 				<div class="slider-number numright">2.5%</div>
 				
-				<div class="slider-value">0.1% annually</div>
+				<div class="slider-value">0.1% per year</div>
 				<div class="clearfix"></div>
 			 <h4>Tax rate</h4>   
 			</div><!--slider-wrapper-->
 			
 			
 			
-		  <p>Example: Suppose a household's wealth is $90,000. Assume the exemption level equals $50,000, above which there is a flat tax rate of 1% of non-exempt wealth per year. In this case, non-exempt wealth is $40,000 which will be taxed at 1% annually, thus the household is liable for $400 in wealth tax per year.</p>
+		  <p>Example: A household owns $90,000. The exemption level is $50,000, and
+			  the tax rate is 1% per year. 
+			  In this case, $40,000 will be taxed at 1%, which makes $400 per year.</p>
 			
 			<a class="button" id="button-simulate" style="margin-top:30px;" href="#ergebnis2" title="CALCULATE RESULT">CALCULATE</a>
 			
@@ -104,18 +106,18 @@
 			<h2 style="margin-bottom:25px">5. The result</h2>
 			<h4>WHO WINS, WHO LOSES?</h4>
 
-			<p>The first number displayed shows the tax revenue per capita given the tax parameters you proposed. 
-				The second number tells you how much wealth tax you would have to pay yourself. The third number and the graph illustrate what would happen if the additional tax revenues were distributed equally among all residents.</p>
+			<p>The first number displayed shows the tax revenue per capita using the tax parameters you proposed. 
+				The second number tells you how much wealth tax you would have to pay yourself. The third number and the graph illustrate what would happen if the wealth tax revenues were distributed equally among all residents.</p>
 			
-			<p><strong>Example:</strong> Suppose the tax exempt amount is set to $50,000 and the tax rate above this amount is 1% per year. 
-				This policy yields per capita tax revenues of $XXX per year. 
+			<p><strong>Example:</strong> Suppose the tax exempt amount is set to $50,000 and the tax rate is 1% per year. 
+				This policy yields per capita tax revenues of $916 per year. 
 				Consider a household owning assets worth $90,000. 
-				Then this household receives $XXX from the redistribution of tax revenues, and owes taxes of $400 per yearleaving a net gain of $XXX per year. 
-				In this example, the lowest 75% in the wealth would gain from the proposed policy, while the top 25\% would lose.</p>
+				Then this household receives $916 from the redistribution of tax revenues, and owes taxes of $400 per year. That is a net gain of $516 per year. 
+				In this example, the lowest 80% in the distribution of wealth would gain from the proposed policy, while the top 20% would lose.</p>
 
-			<div class="threecol"><h3>per Capita tax revenue:</h3><span id="percapita" class="results-number">-</span></div> 
-			<div class="threecol"><h3>taxes you owe:</h3><span id="mytax" class="results-number">-</span></div>
-			<div class="threecol"><h3>your net gain (or loss):</h3><span id="mytaxbalance" class="results-number">-</span></div>
+			<div class="threecol"><h3>Per capita tax revenue:</h3><span id="percapita" class="results-number">-</span></div> 
+			<div class="threecol"><h3>Taxes you owe:</h3><span id="mytax" class="results-number">-</span></div>
+			<div class="threecol"><h3>Your net gain (or loss):</h3><span id="mytaxbalance" class="results-number">-</span></div>
 			<div class="clearfix"></div>
 			<canvas id="results-display" width="1000" height="600"></canvas>
 			
