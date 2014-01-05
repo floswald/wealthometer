@@ -319,6 +319,16 @@ nav ol {
     list-style-image: none;
 }
 
+nav ul {
+		margin: 0;
+		padding: 0;
+		display:inline-table;
+}
+nav ul li {
+		display:inline;
+}
+
+
 /* ==========================================================================
    Embedded content
    ========================================================================== */

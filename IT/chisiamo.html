@@ -3,27 +3,35 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-          <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  	<title>wealthometer.org/US</title>
-  	<meta name="description" content="Wealthometer: USA">
-  	<meta property="og:type" content="non_profit">
-  	<meta property="og:title" content="non_profit">
-  	<meta property="og:url" content="http://wealthometer.org/">
-  	<meta property="og:image" content="http://wealthometer.org/img/fb-logo.png">
-  	<meta property="og:description" content="Enter your data and find out your position in the US distribution of wealth. Simulate how wealth taxes would affect you and others!">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Wealthometer: IT</title>
+	<meta name="description" content="Wealthometer: IT">
+	<meta property="og:type" content="non_profit">
+	<meta property="og:title" content="non_profit">
+	<meta property="og:url" content="http://wealthometer.org/">
+	<meta property="og:image" content="http://wealthometer.org/img/fb-logo.png">
+	<meta property="og:description" content="Inserisci i tuoi dati e scopri la tua posizione nella distribuzione della richezza. Simula gli effetti di un cambio nella tassazione sul patrimonio!">
 
 	<link rel="stylesheet" href="../css/normalize.min.css">
 	<link rel="stylesheet" href="../css/main.css">
-        
-        <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-
-        <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-        <![endif]-->
-			
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+		<script src="js/excanvas.compiled.js"></script>
+	<![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+	<script src="js/simple-slider.js"></script>
+	
+	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,7 +42,8 @@
 	  ga('send', 'pageview');
 
 	</script>
-    </head>
+
+</head>
     
     
     <body>
@@ -42,56 +51,61 @@
     <div id="wrapper">
     <a name="top" id="top"></a>
             
-      <div class="row" id="header">
-                <div class="row-contentholder">
-            		
-			<h1 class="title"><a href="index.html" title="HOME">WEALTHOMETER: USA</a></h1>
-		<nav>
-			<ul>
-				<li><a href="motivation.html" title="MOTIVATION">MOTIVATION</a></li>
-				<li><a href="calculator1.html" title="CALCULATOR">CALCULATOR</a></li>
-				<li><a href="data.html" title="BACKGROUND: DATA">BACKGROUND: DATA</a></li>
-				<li><a href="calculation.html" title="BACKGROUND: CALCULATIONS">BACKGROUND: CALCULATIONS</a></li>
-				<li><a href="about.html" title="ABOUT US" class="current">ABOUT US</a></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </nav>
-                </div>
-            </div>
+		<div class="row" id="header">
+			<div class="row-contentholder">
+				<h1 class="title"><a href="index.html" title="HOME">WEALTHOMETER: IT</a></h1>
+				<nav>
+					<ul>
+						<li><a href="motivazione.html" title="MOTIVATION">MOTIVAZIONE</a></li>
+						<li><a href="calcolatrice1.html" title="CALCULATOR">CALCOLATRICE</a></li>
+						<li><a href="dati.html" title="BACKGROUND: DATA">INFO: DATI</a></li>
+						<li><a href="calcolazione.html" title="CALCOLAZIONE">INFO: CALCOLI</a></li>
+						<li><a href="chisiamo.html" title="ABOUT US">CHI SIAMO</a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</nav>
+			</div>
+		</div>
 
             
       <div class="row" id="content">
             	<div class="row-contentholder centered">
             		<h2>About Us</h2>
 
-<p>This site is a private initiative of Maximilian Kasy, Department of Economics,  Harvard University. Nobody from the team is member of a political party or lobby. We would be happy, however, if the site could contribute to current political debates!</p>
+<p>This site is a private initiative of Maximilian Kasy, Department of Economics, Harvard University. 
+	Nobody from the team is affiliated with a political party or lobby group. 
+	We would be happy, however, if the site could contribute to current political debates!</p>
 
-<p>This website has been online as a version for Austria since mid 2013 at <a href="http://www.binichreich.at">http://www.binichreich.at</a>. Wealthometer.org is the international version of that site.</p>
+<p>An Austrian version of this website has been online since mid 2013 at <a href="http://www.binichreich.at">http://www.binichreich.at</a>.</p>
 
-<p><strong>Idea and responsible for content:</strong><br>
+<p><strong>Idea and content:</strong><br>
   Maximilian  Kasy, Department of Economics, Harvard University
   <br>
   <a href="http://scholar.harvard.edu/kasy">http://scholar.harvard.edu/kasy</a></p>
 
 
-<p><strong>binichreicht.at Webdesign:</strong><br>
+<p><strong>binichreich.at Webdesign:</strong><br>
   Mathias  Doblhammer,<a href="http://www.deeait.com"> Deeait x Creates</a></p>
-<p><strong>binichreicht.at programming:</strong><br>
+<p><strong>binichreich.at programming:</strong><br>
   Sebastian  Schmid, <a href="http://www.100und1.com">100und1</a></p>
-<p><strong>binichreicht.at Organisation:</strong><br>
+<p><strong>binichreich.at Organisation:</strong><br>
   Walter  Palmetshofer, FU Berlin</p>
-  <p><strong>binichreicht.at -> wealthometer.org</strong><br>
-  Florian Oswald, Deparment of Economics, University College London<br>
+  <p><strong>binichreich.at &rarr; wealthometer.org</strong><br>
+  Florian Oswald, Department of Economics, University College London<br>
   <a href="http://floswald.github.io/">http://floswald.github.io/</a></p>
-  </p>
+      
 <p><strong>Collaboration on text and design:</strong><br>
   Susanne Kimm</p>
+<p><strong>Traduzioni per wealthometer.org/IT</strong><br>
+Simone Pedemonte, Oxford University</p>
+
 <p>Thank for feedback and many helpful discussions to Katharina Ludwig, Gerhard Meszaros und  Florian Bruckner</p>
 <p><strong>Contact:</strong><br>
   webmaster (at) wealthometer.org <br>
-  maximiliankasy (at) fas.harvard.edu</p>
-                </div>
-            </div>
+  maximiliankasy (at) fas.harvard.edu</p>           
+	 </div>
+
+ </div>
             
       <div class="row txt-small-bright" id="footer">
             	<div class="row-contentholder">

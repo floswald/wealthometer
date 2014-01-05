@@ -6,18 +6,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Wealthometer: USA</title>
-	<meta name="description" content="Wealthometer: USA">
+	<title>Wealthometer: IT</title>
+	<meta name="description" content="Wealthometer: IT">
 	<meta property="og:type" content="non_profit">
 	<meta property="og:title" content="non_profit">
 	<meta property="og:url" content="http://wealthometer.org/">
 	<meta property="og:image" content="http://wealthometer.org/img/fb-logo.png">
-	<meta property="og:description" content="Enter your data and find out your position in the US distribution of wealth. Simulate how wealth taxes would affect you and others!">
-	
+	<meta property="og:description" content="Inserisci i tuoi dati e scopri la tua posizione nella distribuzione della richezza. Simula gli effetti di un cambio nella tassazione sul patrimonio!">
+
 	<link rel="stylesheet" href="../css/normalize.min.css">
 	<link rel="stylesheet" href="../css/main.css">
-	
+
 	<link href="../css/simple-slider.css" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 	<script src="js/jquery.cookie.js"></script>
@@ -25,14 +26,12 @@
 	<script src="js/main.js"></script>
 	<script type="text/javascript" src="js/smoothscroll.js"></script>
 	<script src="js/simple-slider.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-
 	<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
 		<script src="js/excanvas.compiled.js"></script>
-		<![endif]-->
-
+	<![endif]-->
+		
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -42,75 +41,72 @@
 	  ga('create', 'UA-45979400-1', 'wealthometer.org');
 	  ga('send', 'pageview');
 
-  </script>
+	</script>
 
 </head>
 <body class="rechner3">
 
-<div id="wrapper">
-	<a name="top" id="top"></a>	
-	<div class="row" id="header">
-		<div class="row-contentholder">
-			<h1 class="title"><a href="index.html" title="HOME">WEALTHOMETER: USA</a></h1>
-		<nav>
-			<ul>
-				<li><a href="motivation.html" title="MOTIVATION">MOTIVATION</a></li>
-				<li><a href="calculator1.html" title="CALCULATOR" class="current">CALCULATOR</a></li>
-				<li><a href="data.html" title="BACKGROUND: DATA">BACKGROUND: DATA</a></li>
-				<li><a href="calculation.html" title="BACKGROUND: CALCULATIONS">BACKGROUND: CALCULATIONS</a></li>
-				<li><a href="about.html" title="ABOUT US">ABOUT US</a></li>
+	<div id="wrapper">
+		<a name="top" id="top"></a>
+		<div class="row" id="header">
+			<div class="row-contentholder">
+				<h1 class="title"><a href="index.html" title="HOME">WEALTHOMETER: IT</a></h1>
+			<nav>
+				<ul>
+					<li><a href="motivazione.html" title="MOTIVATION">MOTIVAZIONE</a></li>
+					<li><a href="calcolatrice1.html" title="CALCULATOR">CALCOLATRICE</a></li>
+					<li><a href="dati.html" title="BACKGROUND: DATA">INFO: DATI</a></li>
+					<li><a href="calcolazione.html" title="CALCOLAZIONE">INFO: CALCOLI</a></li>
+					<li><a href="chisiamo.html" title="ABOUT US">CHI SIAMO</a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</nav>
+			</div>
 		</div>
-	</div>
 		
  	<div class="row" id="content">
 		<div class="row-contentholder centered">
-			<h2>4. The wealth tax simulator</h2>
+			<h2>4. Simulatore di una riforma fiscale</h2>
 			<br>
-			<h4>HOW WOULD YOU TAX WEALTH?</h4>
+			<h4>Come disegnaresti la tassa sul patrimonio?</h4>
 
 			<div class="slider-wrapper" id="slider-taxfree">
 				<input class="slider2" type="text" data-slider="true" data-slider-range="0,1000000" data-slider-step="1000">
-				<div class="slider-number numleft">$0</div>
-				<div class="slider-number numright">$1,000,000</div>
+				<div class="slider-number numleft">0€</div>
+				<div class="slider-number numright">1.000.000€</div>
 				<div class="slider-value">0</div>
 				<div class="clearfix"></div>
-				<h4>Tax exempt amount</h4>   
+				<h4>importo esentasse</h4>   
 			</div><!--slider-wrapper-->
 
 			
 			<div class="slider-wrapper" id="slider-taxamt">
 				
 				<input class="slider2" type="text" data-slider="true" data-slider-range="0.1,2.5" data-slider-step="0.1">
-				<div class="slider-number numleft">0.1%</div>
-				<div class="slider-number numright">2.5%</div>
+				<div class="slider-number numleft">0,1%</div>
+				<div class="slider-number numright">2,5%</div>
 				
-				<div class="slider-value">0,1% annually</div>
+				<div class="slider-value">0,1% per annum</div>
 				<div class="clearfix"></div>
-			 <h4>Tax rate</h4>   
+			 <h4>Aliquota fiscale</h4>   
 			</div><!--slider-wrapper-->
 			
+		  <p>Esempio: Immagina il patrimonio di una famiglia sia 90.000 di Euro. Supponi che l'area di esenzione sia uguale al 50.000€. Al di sopra di questo importo c'è una tassa del 1% sul patrimonio non esente. In questo caso, il patrimonio non esente è 40.000 € (90.000 - 50.000 = 40.000), che sarà tassato al 1% per annum, il quale corrisponde a una risponsabilità fiscale della famiglia esemplare di 400 €.</p>
 			
-			
-		  <p>Example: Suppose a household's wealth is $90,000. Assume the exemption level equals $50,000, above which there is a flat tax rate of 1% of non-exempt wealth per year. In this case, non-exempt wealth is $40,000 which will be taxed at 1% annually, thus the household is liable for $400 in wealth tax per year.</p>
-			
-			<a class="button" id="button-simulate" style="margin-top:30px;" href="#ergebnis2" title="CALCULATE RESULT">CALCULATE</a>
+			<a class="button" id="button-simulate" style="margin-top:30px;" href="#ergebnis2" title="CALCOLA RISULTATO">CALCOLA</a>
 			
 			<hr>
 			
 			<a name="ergebnis2"></a>
-			<h2 style="margin-bottom:25px">5. The result</h2>
-			<h4>WHO WINS, WHO LOSES?</h4>
+			<h2 style="margin-bottom:25px">5. Il Risultato</h2>
+			<h4>Chi guadagna, chi perde?</h4>
 
-			<p>The first number displayed shows the tax revenue per capita given the tax parameters you proposed. 
-				The second number tells you how much wealth tax you would have to pay yourself. The third number and the graph illustrate what would happen if the additional tax revenues were distributed equally among all residents.</p>
+			<p>Il primo numero mostra le entrate fiscali per lo Stato in base ai parametri che hai proposto. Il secondo numero indica quante tasse sul tuo patrimonio dovresti pagare tu stesso. Il terzo numero insieme al grafico dimstrano cosa succederebbe si uno distribuirebbe a parti uguali il totale delle entrate fiscali addizionali generate di questa riforma.</p>
 			
-			<p><strong>Example:</strong> Suppose the tax exempt amount is set to $50,000 and the tax rate above this amount is 1% per year. 
-				This policy yields per capita tax revenues of $XXX per year. 
-				Consider a household owning assets worth $90,000. 
-				Then this household receives $XXX from the redistribution of tax revenues, and owes taxes of $400 per yearleaving a net gain of $XXX per year. 
+			<p><strong>Esempio:</strong> Suppose the tax exempt amount is set to €50,000 and the tax rate above this amount is 1% per year. 
+				This policy yields per capita tax revenues of €XXX per year. 
+				Consider a household owning assets worth €90,000. 
+				Then this household receives €XXX from the redistribution of tax revenues, and owes taxes of €400 per yearleaving a net gain of €XXX per year. 
 				In this example, the lowest 75% in the wealth would gain from the proposed policy, while the top 25\% would lose.</p>
 
 			<div class="threecol"><h3>per Capita tax revenue:</h3><span id="percapita" class="results-number">-</span></div> 
@@ -122,7 +118,7 @@
 			<hr>
 
 			<a class="button" style="margin-top:10px;" href="calculator1.html" title="ZURÜCK ZUM START">BACK TO START</a>
-			CALCULATOR: <a href="calculator1.html" title="SCHRITT 1">1</a> | <a href="calculator2.html" title="SCHRITT 2">2</a> | <span class="current">3</span>
+			CALCOLATRICE: <a href="calcolatrice1.html" title="Prima Parte">1</a> | <a href="calcolatrice2.html" title="Seconda Parte">2</a> | <span class="current">3</span>
 		</div>
 	</div>
 	<div class="row txt-small-bright" id="footer">
