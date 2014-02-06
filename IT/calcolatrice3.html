@@ -74,9 +74,9 @@
 				<input class="slider2" type="text" data-slider="true" data-slider-range="0,1000000" data-slider-step="1000">
 				<div class="slider-number numleft">0€</div>
 				<div class="slider-number numright">1.000.000€</div>
-				<div class="slider-value">0</div>
+				<div class="slider-value">0€</div>
 				<div class="clearfix"></div>
-				<h4>importo esentasse</h4>   
+				<h4>Solia di esenzione</h4>   
 			</div><!--slider-wrapper-->
 
 			
@@ -91,7 +91,7 @@
 			 <h4>Aliquota fiscale</h4>   
 			</div><!--slider-wrapper-->
 			
-		  <p>Esempio: Immagina il patrimonio di una famiglia sia 90.000 di Euro. Supponi che l'area di esenzione sia uguale al 50.000€. Al di sopra di questo importo c'è una tassa del 1% sul patrimonio non esente. In questo caso, il patrimonio non esente è 40.000 € (90.000 - 50.000 = 40.000), che sarà tassato al 1% per annum, il quale corrisponde a una risponsabilità fiscale della famiglia esemplare di 400 €.</p>
+		  <p>Esempio: ipotizziamo che il patrimonio di una famiglia ammonti a 90.000€, che la soglia di esenzione sia fissata a 50.000€  e che il patrimonio eccedente questa soglia venga tassato in base a un’aliquota dell’1%. In questo caso, il patrimonio non esente è pari a 40.000€ (90.000 - 50.000 = 40.000), che, tassato all’1% annuo, corrisponde a una responsabilità fiscale per la famiglia re rappresentativa pari a 400€.</p>
 			
 			<a class="button" id="button-simulate" style="margin-top:30px;" href="#ergebnis2" title="CALCOLA RISULTATO">CALCOLA</a>
 			
@@ -101,23 +101,21 @@
 			<h2 style="margin-bottom:25px">5. Il Risultato</h2>
 			<h4>Chi guadagna, chi perde?</h4>
 
-			<p>Il primo numero mostra le entrate fiscali per lo Stato in base ai parametri che hai proposto. Il secondo numero indica quante tasse sul tuo patrimonio dovresti pagare tu stesso. Il terzo numero insieme al grafico dimstrano cosa succederebbe si uno distribuirebbe a parti uguali il totale delle entrate fiscali addizionali generate di questa riforma.</p>
+			<p>Il primo numero rappresenta le entrate fiscali per lo Stato in base ai parametri che hai fissato. Il secondo numero indica l’ammontare di tasse sul patrimonio che dovresti pagare te in base a tali parametri. Il terzo numero e il grafico mostrano cosa succederebbe se tutto il gettito fiscale addizionale generato da questa riforma venisse distribuito equamente a tutti i contribuenti.</p>
 			
-			<p><strong>Esempio:</strong> Suppose the tax exempt amount is set to €50,000 and the tax rate above this amount is 1% per year. 
-				This policy yields per capita tax revenues of €XXX per year. 
-				Consider a household owning assets worth €90,000. 
-				Then this household receives €XXX from the redistribution of tax revenues, and owes taxes of €400 per yearleaving a net gain of €XXX per year. 
-				In this example, the lowest 75% in the wealth would gain from the proposed policy, while the top 25\% would lose.</p>
+			<p><strong>Esempio:</strong> Ipotizziamo che la soglia di esenzione sia fissata a 50,000€ e che l’aliquota fiscale al di sopra di questa soglia sia pari all’1% annuo. Tale politica produce un gettito fiscale pro capite pari a 651€ annui. 
+Se consideriamo un nucleo familiare con un patrimonio pari a €90,000, dalla redistribuzione del gettito fiscale questo riceverebbe un importo pari a 651€, mentre dovrebbe pagare allo Stato tasse per un importo pari a €400. Il guadagno netto annuo per questa famiglia sarebbe pari a 251€ (651 - 400 = 251).
+				</p>
 
-			<div class="threecol"><h3>per Capita tax revenue:</h3><span id="percapita" class="results-number">-</span></div> 
-			<div class="threecol"><h3>taxes you owe:</h3><span id="mytax" class="results-number">-</span></div>
-			<div class="threecol"><h3>your net gain (or loss):</h3><span id="mytaxbalance" class="results-number">-</span></div>
+			<div class="threecol"><h3>gettito fiscale pro capite:</h3><span id="percapita" class="results-number">-</span></div> 
+			<div class="threecol"><h3>importo tasse:</h3><span id="mytax" class="results-number">-</span></div>
+			<div class="threecol"><h3>guadagno (perdita) netto:</h3><span id="mytaxbalance" class="results-number">-</span></div>
 			<div class="clearfix"></div>
 			<canvas id="results-display" width="1000" height="600"></canvas>
 			
 			<hr>
 
-			<a class="button" style="margin-top:10px;" href="calculator1.html" title="ZURÜCK ZUM START">BACK TO START</a>
+			<a class="button" style="margin-top:10px;" href="calcolatrice1.html" title="ZURÜCK ZUM START">TORNA AL INIZIO</a>
 			CALCOLATRICE: <a href="calcolatrice1.html" title="Prima Parte">1</a> | <a href="calcolatrice2.html" title="Seconda Parte">2</a> | <span class="current">3</span>
 		</div>
 	</div>
