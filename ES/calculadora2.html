@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<title>wealthometer.org: ES</title>
+  	<meta name="description" content="Wealthometer: ES">
+  	<meta property="og:type" content="Wealthometer: ES">
+  	<meta property="og:title" content="Wealthometer: ES">
+  	<meta property="og:url" content="http://wealthometer.org/">
+  	<meta property="og:image" content="http://wealthometer.org/img/fb-logo.png">
+  	<meta property="og:description" content="Cual es su posicion en la distribucion de la riqueza espanola? Como le afectaria a usted un cambio de impuestos sobre el patrimonio?">
+
+	<link rel="stylesheet" href="../css/normalize.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+   
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script src="js/simple-slider.js"></script>
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+		<script src="js/excanvas.compiled.js"></script>
+	<![endif]-->
+		
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-45979400-1', 'wealthometer.org');
+	  ga('send', 'pageview');
+
+  </script>
+
+</head>
+<body class="rechner2">
+<div id="wrapper">
+	<a name="top" id="top"></a>
+			
+	<div class="row" id="header">
+		<div class="row-contentholder">
+			<h1 class="title"><a href="index.html" title="HOME">WEALTHOMETER: ES</a></h1>
+		<nav>
+			<ul>
+				<li><a href="motivacion.html" title="MOTIVATI&Oacute;N">MOTIVACI&Oacute;N</a></li>
+				<li><a href="calculadora1.html" title="CALCULADORA">CALCULADORA</a></li>
+				<li><a href="datos.html" title="BACKGROUND: DATOS">DATOS</a></li>
+				<li><a href="calculos.html" title="BACKGROUND: CALCULOS">CALCULOS</a></li>
+				<li><a href="about.html" title="ABOUT US" class="current">QUI&Eacute;NES SOMOS</a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</nav>
+		</div>
+	</div>
+			
+	<div class="row" id="content">
+		<div class="row-contentholder centered">
+	
+	<!-- START TRANSLATING! -->
+
+
+			<h2 style="margin-bottom:20px;">2. Su riqueza</h2>
+			<h3>¿CU&Aacute;NTO POSEE SU HOGAR?</h3>
+			<p>Ninguno de los datos que introduzca se almacenar&aacute;. </p>
+			<form>
+				<fieldset>
+					<!--<legend>VERMÖGENSWERTE</legend>-->
+					<div class="threecol">
+						<label for="sachvermoegen"><h4>ACTIVOS REALES</h4></label>
+						<input type="text" name="Sachvermoegen" id="sachvermoegen" placeholder="€" />
+						<ul class="f-ul-details">
+							<li>Bienes ra&iacute;ces residenciales</li>
+							<li>Bienes ra&iacute;ces comerciales, incluyendo tierras de cultivo, bosques, etc </li>
+							<li>Veh&iacute;culos</li>
+							<li>Participaciones directas en empresas</li>
+							<li>Otros objetos de valor, joyas, etc.</li>
+						</ul>
+					</div>
+					<div class="threecol">
+						<label for="finanzvermoegen"><h4>ACTIVOS FINANCIEROS</h4></label>
+						<input type="text" name="Finanzvermoegen" id="finanzvermoegen" placeholder="€" />
+						<ul class="f-ul-details">
+							<li>Cuentas corrientes </li>
+							<li>Cuentas de ahorro </li>
+							<li>Fondos de pensiones, fondos de seguros de vida, etc.</li>
+							<li>Acciones, bonos y otras inversiones financieras</li>
+							<li>El dinero adeudado (acreencias) a su hogar por otros </li>
+						</ul>
+					</div>
+					<div class="threecol">
+						<label for="schulden"><h4>DEUDA</h4></label>
+						<input type="text" name="Schulden" id="schulden" placeholder="€" />
+						<ul class="f-ul-details">
+							<li>Deudas garantizadas (hipotecas, pr&eacute;stamos para autom&oacute;viles, etc)</li>
+							<li>Deudas sin garant&iacute;a, es decir, deudas de tarjetas de cr&eacute;dito, atrasos, sobregiros no planificados, etc.</li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+					<label for="mitglieder"><h4 style="margin-top:20px; margin-bottom:15px;">N&Uacute;MERO DE MIEMBROS EN EL HOGAR</h4></label>
+					<input type="text" name="Mitglieder" id="mitglieder" placeholder="1" /> 
+				</fieldset>
+			</form>
+			<p>Su riqueza se calcula como la suma de los activos reales y financieros, neta de la deuda, y dividida por el n&uacute;mero de miembros del hogar. </p>
+			<a class="button" id="button-calculate" href="#ergebnis1" title="CALCULATE RESULT">CALCULAR</a>
+			<hr>
+			<a name="ergebnis1"></a>
+			<h2 style="margin-bottom:25px">3. La comparaci&oacute;n </h2>
+			<div class="twocol"><h3>Su estimado:</h3><span class="results-number" id="f-estimate" style="color:green">-</span></div> 
+			<div class="twocol"><h3>Su posici&oacute;n real:</h3><span class="results-number" id="f-actual" style="color:#73A5B1">-</span></div>
+			<div class="clearfix"></div>
+			<canvas id="results-display" width="1000" height="600"></canvas>
+			<div class="showlater">
+				<h4>EXPLICACI&Oacute;N</h4>
+				<p>Su riqueza es €<span class="val-actual">204.000</span> por cada miembro del hogar, lo cual es m&aacute;s de lo que el  <span class="pos-actual">86</span>% de la población espa&ntilde;ola posee (barra <strong>azul</strong>).
+					<br>Esto significa que el <span class="pos-actual">86</span>% de los Espa&ntilde;oles son menos ricos que usted.</p>
+					<p>En el <span class="pos-estimate">86</span>% una barra <strong>verde</strong> en €<span class="val-estimate">204.000</span> marca su estimado inicial.</p>
+			</div>
+			
+	<!-- END TRANSLATING! -->
+
+
+			<hr>
+			<a class="button" id="button-weiter" style="margin-top:10px;" href="calculadora3.html" title="PROXIMO PASO">CONTINUAR</a>
+			CALCULADORA: <a href="calculadora1.html" title="PASO 1">1</a> | <span class="current">2</span> | <a href="calculadora3.html" title="PASO 3">3</a>
+		</div>
+	</div>
+	
+	<div class="row txt-small-bright" id="footer">
+		<div class="row-contentholder">
+			&copy; 2013 wealthometer.org
+		</div>
+	</div>
+</div><!--WRAPPER-->
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<title>wealthometer.org: ES</title>
+  	<meta name="description" content="Wealthometer: ES">
+  	<meta property="og:type" content="Wealthometer: ES">
+  	<meta property="og:title" content="Wealthometer: ES">
+  	<meta property="og:url" content="http://wealthometer.org/">
+  	<meta property="og:image" content="http://wealthometer.org/img/fb-logo.png">
+  	<meta property="og:description" content="Cual es su posicion en la distribucion de la riqueza espanola? Como le afectaria a usted un cambio de impuestos sobre el patrimonio?">
+	
+	<link rel="stylesheet" href="../css/normalize.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+	
+	<link href="../css/simple-slider.css" rel="stylesheet" type="text/css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+	<script src="js/simple-slider.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+		<script src="js/excanvas.compiled.js"></script>
+		<![endif]-->
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-45979400-1', 'wealthometer.org');
+	  ga('send', 'pageview');
+
+  </script>
+
+</head>
+<body class="rechner3">
+
+<div id="wrapper">
+	<a name="top" id="top"></a>	
+	<div class="row" id="header">
+		<div class="row-contentholder">
+			<h1 class="title"><a href="index.html" title="HOME">WEALTHOMETER: ES</a></h1>
+		<nav>
+			<ul>
+				<li><a href="motivacion.html" title="MOTIVATI&Oacute;N">MOTIVACI&Oacute;N</a></li>
+				<li><a href="calculadora1.html" title="CALCULADORA">CALCULADORA</a></li>
+				<li><a href="datos.html" title="BACKGROUND: DATOS">DATOS</a></li>
+				<li><a href="calculos.html" title="BACKGROUND: CALCULOS">CALCULOS</a></li>
+				<li><a href="about.html" title="ABOUT US" class="current">QUI&Eacute;NES SOMOS</a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</nav>
+		</div>
+	</div>
+		
+ 	<div class="row" id="content">
+		<div class="row-contentholder centered">
+	
+			<!-- START TRANSLATING! -->
+
+
+			<h2>4. El simulador de impuesto sobre el patrimonio</h2>
+			<br>
+			<h4>&iquest;C&Oacute;MO DETERMINAR&Iacute;A USTED EL IMPUESTO SOBRE EL PATRIMONIO?</h4>
+
+			<div class="slider-wrapper" id="slider-taxfree">
+				<input class="slider2" type="text" data-slider="true" data-slider-range="0,1000000" data-slider-step="1000">
+				<div class="slider-number numleft">€0</div>
+				<div class="slider-number numright">€1.000.000</div>
+				<div class="slider-value">€0</div>
+				<div class="clearfix"></div>
+				<h4>Cantidad exenta de impuestos</h4>   
+			</div><!--slider-wrapper-->
+
+			
+			<div class="slider-wrapper" id="slider-taxamt">
+				
+				<input class="slider2" type="text" data-slider="true" data-slider-range="0.1,2.5" data-slider-step="0.1">
+				<div class="slider-number numleft">0,1%</div>
+				<div class="slider-number numright">2,5%</div>
+				
+				<div class="slider-value">0,1% por a&ntilde;o</div>
+				<div class="clearfix"></div>
+			 <h4>Tasa impositiva</h4>   
+			</div><!--slider-wrapper-->
+			
+			
+			
+		  <p>Ejemplo: Un hogar es propietario de € 90,000. El nivel de exención es de € 50.000, y la tasa de impuesto es del 1% por a&ntilde;o. 
+			  En este caso, € 40.000 se gravará al 1%, lo que da € 400 por a&ntilde;o.</p>
+			
+			<a class="button" id="button-simulate" style="margin-top:30px;" href="#ergebnis2" title="CALCULAR RESULTADO">CALCULAR</a>
+			
+			<hr>
+			
+			<a name="ergebnis2"></a>
+			<h2 style="margin-bottom:25px">5. El resultado</h2>
+			<h4>&iquest;QUI&Eacute;N GANA, QUI&Eacute;N PIERDE?</h4>
+
+			<p>El primer n&uacute;mero en la pantalla muestra la recaudaci&oacute;n tributaria per c&aacute;pita usando los par&aacute;metros de impuestos que usted propuso. El segundo n&uacute;mero indica cu&aacute;nto impuesto sobre el patrimonio usted tendr&oacute;a que pagar. El tercer número y el gr&oacute;fico ilustran lo que suceder&iacute;a si los ingresos por impuestos sobre el patrimonio se distribuyen por igual entre todos los residentes.</p>
+			
+			<p><strong>Ejemplo:</strong> Supongamos que la cantidad exenta de impuestos se establece en € 50.000 y la tasa del impuesto es del 1% por a&ntilde;o.
+				Esta pol&iacute;tica genera ingresos tributarios per c&aacute;pita de 916 Euros al a&ntilde;o.
+				Considere un hogar que posee activos por valor de € 90.000.
+				Entonces esta familia recibe € 916 de la redistribuci&oacute;n de los ingresos fiscales, y debe impuestos de € 400 por a&ntilde;o . Eso es una ganancia neta de € 516 por a&ntilde;o.
+				En este ejemplo, el 80% m&aacute;s bajo en la distribuci&oacute;n de la riqueza se beneficiar&iacute;a de la pol&iacute;tica propuesta, mientras que el 20% perder&iacute;a</p>
+
+			<div class="threecol"><h3>Ingresos fiscales per c&aacute;pita:</h3><span id="percapita" class="results-number">-</span></div> 
+			<div class="threecol"><h3>Impuestos que usted debe:</h3><span id="mytax" class="results-number">-</span></div>
+			<div class="threecol"><h3>Su ganancia neta (o p&eacute;rdida):</h3><span id="mytaxbalance" class="results-number">-</span></div>
+			<div class="clearfix"></div>
+			<canvas id="results-display" width="1000" height="600"></canvas>
+			
+			<hr>
+
+			<!-- END TRANSLATING! -->
+
+
+			<a class="button" style="margin-top:10px;" href="calculadora1.html" title="ZURÜCK ZUM START">VOLVER AL INICIO</a>
+			CALCULADORA: <a href="calculadora1.html" title="PASO 1">1</a> | <a href="calculadora2.html" title="PASO 2">2</a> | <span class="current">3</span>
+		</div>
+	</div>
+	<div class="row txt-small-bright" id="footer">
+		<div class="row-contentholder">
+			&copy; 2013 wealthometer.org
+		</div>
+	</div>
+	</div><!--WRAPPER-->
+</body>
+</html>
