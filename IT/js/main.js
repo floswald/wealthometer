@@ -44,7 +44,7 @@ $(function() {
 	});
 
 	$("#slider-taxamt input").bind("slider:changed", function (event, data) {
-		$(this).nextAll(".slider-value").html(nf(data.value, 1, ",", ".")+"% per annum");
+		$(this).nextAll(".slider-value").html(nf(data.value, 1, ",", ".")+"% annuo");
 	});
 
 	// rechner1.html
