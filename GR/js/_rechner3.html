@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>BinIchReich?</title>
+	<meta name="description" content="Bin ich reich?">
+	<meta property="og:type" content="non_profit">
+	<meta property="og:title" content="non_profit">
+	<meta property="og:url" content="http://www.binichreich.at/">
+	<meta property="og:image" content="http://www.binichreich.at/img/fb-logo.png">
+	<meta property="og:description" content="Geben Sie Ihr Vermögen ein und finden Sie heraus, wo Sie in der Verteilung stehen. Simulieren Sie, wie sich verschiedene Vermögenssteuermodelle auf Sie und andere auswirken würden!">
+	
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	
+	<link href="css/simple-slider.css" rel="stylesheet" type="text/css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+	<script src="js/simple-slider.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+		<script src="js/excanvas.compiled.js"></script>
+	<![endif]-->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-44319113-1', 'binichreich.at');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+<body class="rechner3">
+
+<div id="wrapper">
+	<a name="top" id="top"></a>	
+	<div class="row" id="header">
+		<div class="row-contentholder">
+			<h1 class="title"><a href="index.html" title="HOME">BIN ICH REICH?</a></h1>
+			<nav>
+				<ul>
+					<li><a href="motivation.html" title="MOTIVATION">MOTIVATION</a></li>
+					<li><a href="rechner1.html" title="RECHNER"  class="current">RECHNER</a></li>
+					<li><a href="daten.html" title="HINTERGRUND DATEN">HINTERGRUND: DATEN</a></li>
+					<li><a href="berechnung.html" title="HINTERGRUND BERECHNUNG">HINTERGRUND: BERECHNUNG</a></li>
+					<li><a href="about.html" title="ÜBER UNS">ÜBER UNS</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</nav>
+		</div>
+	</div>
+		
+ 	<div class="row" id="content">
+		<div class="row-contentholder centered">
+			<h2>4. Der Steuersimulator</h2>
+			
+			<h4>WIE WÜRDEN SIE VERMÖGEN BESTEUERN?</h4>
+
+			<div class="slider-wrapper" id="slider-taxfree">
+				<input class="slider2" type="text" data-slider="true" data-slider-range="0,1000000" data-slider-step="1000">
+				<div class="slider-number numleft">0 €</div>
+				<div class="slider-number numright">1.000.000 €</div>
+				<div class="slider-value">0</div>
+				<div class="clearfix"></div>
+				<h4>Steuerfreibetrag</h4>   
+			</div><!--slider-wrapper-->
+
+			
+			<div class="slider-wrapper" id="slider-taxamt">
+				
+				<input class="slider2" type="text" data-slider="true" data-slider-range="0,2.5" data-slider-step="0.1">
+				<div class="slider-number numleft">0%</div>
+				<div class="slider-number numright">2,5%</div>
+				
+				<div class="slider-value">0,0% pro Jahr</div>
+				<div class="clearfix"></div>
+			 <h4>Steuersatz</h4>   
+			</div><!--slider-wrapper-->
+			
+			
+			
+		  <p>Beispiel: Jemand besitzt 90.000 Euro. Der Freibetrag liegt bei 50.000 Euro, der Steuersatz bei 1% pro Jahr. Das bedeutet, 40.000 Euro dieses Vermögens werden mit 1% besteuert, das sind 400 Euro pro Jahr.</p>
+			
+			<a class="button" id="button-simulate" style="margin-top:30px;" href="#ergebnis2" title="ERGEBNIS BERECHNEN">BERECHNEN</a>
+			
+			<hr>
+			
+			<a name="ergebnis2"></a>
+			<h2 style="margin-bottom:25px">5. Das Ergebnis</h2>
+			<h4>WER GEWINNT, WER VERLIERT?</h4>
+
+			<p>Die erste Zahl gibt an, wie viel zusätzliche Steuereinnahmen der österreichische Staat mit Ihrem Steuermodell hätte. Die zweite Zahl gibt an, wie viel Vermögenssteuer Sie selbst zahlen müssten. Die dritte Zahl und die Grafik zeigen zur Veranschaulichung, was passieren würde, wenn die zusätzlichen Steuereinnahmen gleichmäßig an alle ausgezahlt würden.</p>
+
+			<p><strong>Ein Beispiel:</strong> Der Freibetrag liegt bei 50.000 Euro, der Steuersatz bei 1% pro Jahr. Das bringt zusätzliche Pro-Kopf-Steuereinnahmen von 651 Euro pro Jahr. Jemand besitzt 90.000 Euro, bekommt pro Jahr 651 Euro ausgezahlt und muss 400 Euro Vermögenssteuer bezahlen. Das heißt, diese Person hat netto 251 Euro mehr in der Tasche. Von diesem Steuermodell profitieren die unteren 75% der Vermögensverteilung. Die obersten 25% bezahlen mehr Steuern, als sie ausgezahlt bekommen.</p>
+			
+			<div class="threecol"><h3>Pro-Kopf-Steuereinnahmen:</h3><span id="percapita" class="results-number">-</span></div> 
+			<div class="threecol"><h3>Steuer auf Ihr Vermögen:</h3><span id="mytax" class="results-number">-</span></div>
+			<div class="threecol"><h3>Ihr Nettogewinn (oder -verlust):</h3><span id="mytaxbalance" class="results-number">-</span></div>
+			<div class="clearfix"></div>
+			<canvas id="results-display" width="1000" height="600"></canvas>
+			
+			<hr>
+
+			<a class="button" style="margin-top:10px;" href="rechner1.html" title="ZURÜCK ZUM START">ZUM START</a>
+			RECHNER: <a href="rechner1.html" title="SCHRITT 1">1</a> | <a href="rechner2.html" title="SCHRITT 2">2</a> | <span class="current">3</span>
+		</div>
+	</div>
+	<div class="row txt-small-bright" id="footer">
+		<div class="row-contentholder">
+			&copy; 2013 www.binichreich.at
+		</div>
+	</div>
+	</div><!--WRAPPER-->
+</body>
+</html>
