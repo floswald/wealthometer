@@ -1,0 +1,135 @@
+
+
+
+The distribution of wealth and the degree of wealth inequality are notoriously hard to measure. Governments generally don't keep records of the distribution of wealth. (This contrasts with the distribution of earnings which is well known from tax data. The distribution of incomes of the self-employed and of incomes from asset ownership is as hard to measure as the wealth distribution.)
+
+
+The calculations for EU countries on this website are based on the recently established Eurosystem Household Finance and Consumption Survey (HFCS). This is a joint venture of all central banks of the Eurozone, together with the national statistical institutes of France, Finland and Portugal.
+
+The HFCS allows for a thorough investigation of the distribution of wealth and debt. It is structured in two main parts:
+
+1. questions relating to the household as a whole, including questions on real assets and their financing, other liabilities/credit constraints, private businesses, financial assets, intergenerational transfers and gifts, and consumption and saving,
+2. and questions relating to individual household members, covering demographics (for all household members), employment, future pension entitlements and income for all household members above age 16.
+
+Table 1 gives an overview of the household balance sheet that was calculated for each houshold based on the survey responses. The total HFCS sample is 62.000 households, ranging from 340 up to 15.000 households by country. The questionnaire was administered between the end of 2008 and mid 2011. The majority of respondants has the year 2010 as a reference year; reference years are important in this study, as the value of assets changed considerably during the economic crisis. Table 2 illustrates sample sizes and response rates for all participating countries.
+
+The question for the HCFS have been harmonized across countries in order to facilitate coherent comparisons. In certain instances country-specific questions were added, for example regarding housing markets or questions related to the pension system. Wherever feasible, great care was taken to oversample relatively wealthy households, in order to facilitate a better estimate of the upper tail of the wealth distribution. The part of total wealth corresponding to the highest percentiles can reach very large amounts. Debts are equally concentrated.
+
+
+
+<p><strong>Table 2: General Information about the HFCS</strong></p>
+<table>
+ <tr class="t-strong t-bt t-pb">
+  <td>Land</td>
+  <td >Sampling Period</td>
+  <td >Sample Size</td>
+  <td >Response Rate (%)</td>
+  <td >Oversampling</td>
+ </tr>
+ <tr class="t-pt t-bt" >
+  <td  >Belgium</td>
+  <td>2010</td>
+  <td >2 364</td>
+  <td>21,8</td>
+  <td>Yes</td>
+ </tr>
+ <tr  >
+  <td  >Germany</td>
+  <td>2010/2011</td>
+  <td >3 565</td>
+  <td>18,7</td>
+  <td>Si</td>
+ </tr>
+ <tr  >
+  <td  >Finland</td>
+  <td>2009/2010</td>
+  <td >10 989</td>
+  <td>82,2</td>
+  <td>Si</td>
+ </tr>
+ <tr  >
+  <td  >France</td>
+  <td>2009/2010</td>
+  <td >15 006</td>
+  <td>69</td>
+  <td>Si</td>
+ </tr>
+ <tr  >
+  <td  >Greece</td>
+  <td>2009</td>
+  <td >2 971</td>
+  <td>47,2</td>
+  <td>Si</td>
+ </tr>
+ <tr  >
+  <td  >Italy</td>
+  <td>2010</td>
+  <td >7 951</td>
+  <td>52,1</td>
+  <td>No</td>
+ </tr>
+ <tr  >
+  <td  >Luxembourg</td>
+  <td>2010/2011</td>
+  <td >950</td>
+  <td>20</td>
+  <td>Si</td>
+ </tr>
+ <tr  >
+  <td  >Malta</td>
+  <td>2010/2011</td>
+  <td >843</td>
+  <td>29,9</td>
+  <td>Si</td>
+ </tr>
+ <tr  >
+  <td  >Netherlands</td>
+  <td>2010</td>
+  <td >1 301</td>
+  <td>57,5</td>
+  <td>No</td>
+ </tr>
+ <tr  >
+  <td  >Austria</td>
+  <td>2010/2011</td>
+  <td >2 380</td>
+  <td>55,7</td>
+  <td>No</td>
+ </tr>
+ <tr  >
+  <td  >Portugal</td>
+  <td>2010</td>
+  <td >4 404</td>
+  <td>64,1</td>
+  <td>Si</td>
+ </tr>
+ <tr  >
+  <td  >Slovachia</td>
+  <td>2010</td>
+  <td >2 057</td>
+  <td>n.d.</td>
+  <td>No</td>
+ </tr>
+ <tr  >
+  <td  >Slovenia</td>
+  <td>2010</td>
+  <td >343</td>
+  <td>36,4</td>
+  <td>No</td>
+ </tr>
+ <tr  >
+  <td  >Spain</td>
+  <td>2008/2009</td>
+  <td >6 197</td>
+  <td>56,7</td>
+  <td>Si</td>
+ </tr>
+ <tr class="t-bb t-pb">
+  <td>Cyprus</td>
+  <td>2010</td>
+  <td>1 237</td>
+  <td>31,4</td>
+  <td>Si</td>
+ </tr>
+</table>
+<p>Source: HFCS Network (2013b)</p>
